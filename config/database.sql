@@ -11,10 +11,10 @@
 -- --------------------------------------------------------
 
 -- 
--- Table `tl_module`
+-- Table `tl_content`
 -- 
 
-CREATE TABLE `tl_module` (
+CREATE TABLE `tl_content` (
   `art_iframe_title` varchar(255) NOT NULL default '',
   `art_iframe_src` varchar(255) NOT NULL default '',
   `art_iframe_width` varchar(255) NOT NULL default '',
@@ -24,6 +24,5 @@ CREATE TABLE `tl_module` (
   `art_iframe_longdesc` varchar(255) NOT NULL default '',
   `art_iframe_name` varchar(255) NOT NULL default '',
   `art_iframe_scrolling` varchar(255) NOT NULL default '',
-  `art_iframe_src` varchar(255) NOT NULL default '',
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
