@@ -12,7 +12,7 @@
 
 
 /**
- * add to Front end modules
+ * add to Content Elements
  */
 
 array_insert($GLOBALS['TL_CTE']['includes'], 0, array('iframe'  => 'ContentArtIframe'));
