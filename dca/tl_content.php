@@ -14,23 +14,21 @@
 /**
  * Add palettes to tl_content
  */
-$GLOBALS['TL_DCA']['tl_content']['palettes']['iframe']='type,art_iframe_title,art_iframe_src,art_iframe_longdesc,art_iframe_width,art_iframe_height,art_iframe_align,art_iframe_frameborder,art_iframe_scrolling;guests,protected;space,cssID';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['iFrame'] = 'type,art_iframe_title,art_iframe_src,art_iframe_longdesc,art_iframe_width,art_iframe_height,art_iframe_align,art_iframe_frameborder,art_iframe_scrolling;{protected_legend:hide},protected;{expert_legend:hide},guests;cssID,space';
 
 
 /**
  * Add fields to tl_content
  */
-
 $fields = array
 (
-
   'art_iframe_title'    =>  array
   (
     'label'                   => &$GLOBALS['TL_LANG']['tl_content']['art_iframe_title'],
     'exclude'                 => true,
     'search'                  => true,
     'inputType'               => 'text',
-    'eval'                    => array()
+    'eval'                    => array('tl_class'=>'long'),
   ),
   'art_iframe_src'      =>  array
   (
@@ -38,7 +36,7 @@ $fields = array
     'exclude'                 => true,
     'search'                  => true,
     'inputType'               => 'text',
-    'eval'                    => array('mandatory'=>true,'rgxp'=>'url', 'decodeEntities'=>true, 'maxlength'=>255, 'tl_class'=>'w50 wizard'),
+    'eval'                    => array('mandatory'=>true, 'rgxp'=>'url', 'decodeEntities'=>true, 'maxlength'=>255, 'tl_class'=>'w50 wizard'),
     'wizard' => array
     (
       array('tl_content', 'pagePicker')
@@ -46,6 +44,7 @@ $fields = array
   ),
   'art_iframe_longdesc' => array
   (
+    'label'                   => &$GLOBALS['TL_LANG']['tl_content']['art_iframe_longdesc'],
     'exclude'                 => true,
     'search'                  => true,
     'inputType'               => 'text',
@@ -79,15 +78,6 @@ $fields = array
     'options'                 => array('1' => 'Ja', '0' => 'Nein'),
     'eval'                    => array('tl_class'=>'w50')
   ),
-  /*
-  'art_iframe_align' => array
-  (
-    'label'                   => &$GLOBALS['TL_LANG']['tl_content']['art_iframe_align'],
-    'exclude'                 => true,
-    'inputType'               => 'select',
-    'options'                 => array('middle' => 'Mitte', 'left' => 'Links', 'right' => 'Rechts')
-  ),
-   */
   'art_iframe_scrolling' => array
   (
     'label'                   => &$GLOBALS['TL_LANG']['tl_content']['art_iframe_scrolling'],
@@ -98,7 +88,6 @@ $fields = array
   ),
 );
 
-
-$GLOBALS['TL_DCA']['tl_content']['fields'] = array_merge($GLOBALS['TL_DCA']['tl_content']['fields'],$fields);
+$GLOBALS['TL_DCA']['tl_content']['fields'] = array_merge($GLOBALS['TL_DCA']['tl_content']['fields'], $fields);
 
 ?>

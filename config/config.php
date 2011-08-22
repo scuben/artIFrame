@@ -15,6 +15,6 @@
  * add to Content Elements
  */
 
-array_insert($GLOBALS['TL_CTE']['includes'], 0, array('iframe' => 'ContentArtIframe'));
+array_insert($GLOBALS['TL_CTE']['includes'], 0, array('iFrame' => 'ContentArtIFrame'));
 
 ?>
