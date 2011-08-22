@@ -3,7 +3,7 @@
 /**
  *
  * PHP version 5
- * @copyright  Patrick Landolt 2011
+ * @copyright  ARTACK WebLab GmbH - 2011
  * @author     Patrick Landolt <http://www.artack.ch>
  * @package    iFrame
  * @license    LGPL

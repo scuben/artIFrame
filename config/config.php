@@ -3,7 +3,7 @@
 /**
  *
  * PHP version 5
- * @copyright  Patrick Landolt 2011
+ * @copyright  ARTACK WebLab GmbH - 2011
  * @author     Patrick Landolt <http://www.artack.ch>
  * @package    iFrame
  * @license    LGPL
@@ -15,6 +15,6 @@
  * add to Content Elements
  */
 
-array_insert($GLOBALS['TL_CTE']['includes'], 0, array('iframe'  => 'ContentArtIframe'));
+array_insert($GLOBALS['TL_CTE']['includes'], 0, array('iframe' => 'ContentArtIframe'));
 
 ?>
