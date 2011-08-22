@@ -19,10 +19,8 @@ CREATE TABLE `tl_content` (
   `art_iframe_src` varchar(255) NOT NULL default '',
   `art_iframe_width` varchar(255) NOT NULL default '',
   `art_iframe_height` varchar(255) NOT NULL default '',
-  `art_iframe_align` varchar(255) NOT NULL default '',
   `art_iframe_frameborder` char(1) NOT NULL default '',
   `art_iframe_longdesc` varchar(255) NOT NULL default '',
-  `art_iframe_name` varchar(255) NOT NULL default '',
   `art_iframe_scrolling` varchar(255) NOT NULL default '',
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
