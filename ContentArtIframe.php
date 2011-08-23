@@ -11,7 +11,7 @@
  * @license    LGPL
  * @filesource
  */
-class ContentArtIframe extends ContentElement
+class ContentArtIFrame extends ContentElement
 {
 
 	/**
