@@ -14,6 +14,7 @@
 /**
  * Content Elements
  */
-$GLOBALS['TL_LANG']['MOD']['iFrame'] = array('iFrame', 'HTML Element iFrame einfügen.');
+
+$GLOBALS['TL_LANG']['CTE']['iFrame']  = array('iFrame', 'Erzeugt das HTML Element iFrame.');
 
 ?>
