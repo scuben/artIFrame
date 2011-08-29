@@ -14,7 +14,7 @@
 /**
  * Add palettes to tl_content
  */
-$GLOBALS['TL_DCA']['tl_content']['palettes']['iFrame'] = 'type,art_iframe_title,art_iframe_src,art_iframe_longdesc,art_iframe_width,art_iframe_height,art_iframe_align,art_iframe_frameborder,art_iframe_scrolling;{protected_legend:hide},protected;{expert_legend:hide},guests;cssID,space';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['iFrame'] = 'type,art_iframe_title,art_iframe_src,art_iframe_longdesc,art_iframe_width,art_iframe_height,art_iframe_align,art_iframe_frameborder,art_iframe_scrolling;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 
 
 /**
